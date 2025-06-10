@@ -1148,6 +1148,11 @@ section {
     background: var(--bg-light);
 }
 
+.careers-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .careers-intro {
     max-width: 800px;
     margin: 0 auto var(--spacing-xl);
@@ -1157,116 +1162,166 @@ section {
 .careers-intro p {
     font-size: 1.1rem;
     line-height: 1.8;
-}
-
-.careers-benefits {
-    margin-bottom: var(--spacing-xxl);
-}
-
-.careers-benefits h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
+    color: var(--text-light);
 }
 
 .benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-xl);
-}
-
-.benefit-item {
-    text-align: center;
-    padding: var(--spacing-md);
-}
-
-.benefit-item i {
-    font-size: 3rem;
-    color: var(--sunset-orange);
-    margin-bottom: var(--spacing-sm);
-}
-
-.benefit-item h4 {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-xs);
-}
-
-.current-openings h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: var(--spacing-lg);
-}
-
-.job-listings {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-lg);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-xxl);
 }
 
-.job-card {
+.benefit-card {
     background: var(--bg-white);
     padding: var(--spacing-lg);
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    text-align: center;
 }
 
-.job-card:hover {
+.benefit-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.job-header {
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    background: rgba(255, 106, 0, 0.1);
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon i {
+    font-size: 2.5rem;
+    color: var(--sunset-orange);
+}
+
+.benefit-card h3 {
+    font-size: 1.5rem;
     margin-bottom: var(--spacing-sm);
 }
 
-.job-header h4 {
-    font-size: 1.5rem;
-    margin: 0;
+.benefit-card p {
+    line-height: 1.6;
 }
 
-.job-type {
-    background: var(--sunset-orange);
-    color: var(--text-white);
+.positions-section {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.positions-section h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.positions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.position-card {
+    background: var(--bg-white);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-top: 4px solid var(--sunset-orange);
+}
+
+.position-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.position-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-dark);
+}
+
+.position-type {
+    display: inline-block;
+    background: rgba(255, 106, 0, 0.1);
+    color: var(--sunset-orange);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 500;
-}
-
-.job-location {
-    color: var(--text-light);
     margin-bottom: var(--spacing-sm);
-    font-size: 0.9rem;
 }
 
-.job-location i {
-    margin-right: 0.5rem;
-}
-
-.job-description {
+.position-card > p {
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
 }
 
-.job-requirements {
+.position-requirements {
     list-style: none;
-    margin-bottom: var(--spacing-md);
+    margin: 0;
 }
 
-.job-requirements li {
+.position-requirements li {
     position: relative;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     color: var(--text-light);
+    font-size: 0.95rem;
 }
 
-.job-requirements li::before {
+.position-requirements li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--sunset-orange);
+    font-weight: bold;
+}
+
+.apprenticeship-section {
+    background: var(--bg-white);
+    padding: var(--spacing-xl);
+    border-radius: 12px;
+    margin-bottom: var(--spacing-xxl);
+    box-shadow: var(--shadow-sm);
+}
+
+.apprenticeship-section h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.apprenticeship-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.apprenticeship-info p {
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.apprenticeship-info ul {
+    list-style: none;
+}
+
+.apprenticeship-info li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+}
+
+.apprenticeship-info li::before {
     content: '✓';
     position: absolute;
     left: 0;
@@ -1274,27 +1329,70 @@ section {
     font-weight: bold;
 }
 
-.btn-sm {
-    padding: 0.5rem 1.5rem;
-    font-size: 0.9rem;
+.apprenticeship-image .image-placeholder {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(255, 106, 0, 0.1), rgba(211, 47, 47, 0.1));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apprenticeship-image i {
+    font-size: 5rem;
+    color: var(--sunset-orange);
+}
+
+.application-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.application-section h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.application-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.method {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.method i {
+    font-size: 3rem;
+    color: var(--sunset-orange);
+    margin-bottom: var(--spacing-sm);
+}
+
+.method h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.method p {
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .careers-cta {
     text-align: center;
-    background: var(--bg-white);
+    background: var(--bg-gray);
     padding: var(--spacing-xl);
     border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-}
-
-.careers-cta h3 {
-    font-size: 1.75rem;
-    margin-bottom: var(--spacing-sm);
 }
 
 .careers-cta p {
     max-width: 600px;
     margin: 0 auto var(--spacing-md);
+    font-size: 1.1rem;
 }
 
 /* ===== Animations ===== */
@@ -1357,11 +1455,20 @@ section {
         min-width: auto;
     }
     
-    .job-listings {
+    .positions-grid,
+    .benefits-grid {
         grid-template-columns: 1fr;
     }
     
-    .benefits-grid {
+    .apprenticeship-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .apprenticeship-image {
+        order: -1;
+    }
+    
+    .application-methods {
         grid-template-columns: 1fr;
     }
 }
