@@ -249,6 +249,10 @@ img {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .hero-logo {
@@ -261,7 +265,7 @@ img {
 
 .hero-title {
     font-size: clamp(2.5rem, 5vw, 4rem);
-    color: var(--text-white);
+    color: var(--text-dark);
     margin-bottom: var(--spacing-md);
     animation: fadeInUp 0.8s ease;
 }
@@ -275,11 +279,10 @@ img {
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--text-white);
+    color: var(--text-light);
     margin: 0 auto var(--spacing-lg);
     max-width: 600px;
     animation: fadeInUp 0.8s ease 0.2s both;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero-buttons {
