@@ -1,0 +1,16 @@
+{
+  "name": "kiyanaw-askiy-website",
+  "version": "1.0.0",
+  "description": "Professional website for Kiyanaw Askiy Construction",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "build": "echo 'No build process required for static site'"
+  },
+  "keywords": ["construction", "website", "waterhen", "first-nation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
