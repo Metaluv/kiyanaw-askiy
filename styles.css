@@ -249,10 +249,7 @@ img {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.95);
     padding: var(--spacing-xl);
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .hero-logo {
